@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <title>Java Script</title>
+</head>
+<body>
+  <div class="container p-5">
+
+  <a class="btn btn-info mb-5" href="./index.html">HOME</a>
+
+  <div id="time">00:00:00</div>
+  <div class="time2">00:00:00</div>
+  <span></span>
+
+  <script>
+    const today=new Date();
+    let hour=today.getHours();
+    let min=today.getMinutes();
+    let sec=today.getSeconds();
+    console.log(min);
+    document.write(hour + ":" + min + ":" + sec);
+    
+    let time=document.getElementById('time');
+    time.innerHTML=hour + ":" + min + ":" + sec;
+
+    document.querySelector('.time2').innerHTML=hour + ":" + min + ":" + sec;
+    document.querySelector('span').innerHTML=hour + ":" + min + ":" + sec;
+
+    document.title="aaaaaaaaaa";
+    // document.querySelector('title').innerHTML="aaaaaaaaaaaa";と同義
+    
+
+
+  </script>
+
+
+</div>
+
+</body>
+</html>
